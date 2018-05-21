@@ -23,6 +23,8 @@ function appendDiv(){
 
 function updateClicks(){
     totalClicks++;
+    $('#displayClicks').empty();
+    $('#displayClicks').append(totalClicks);
 }
 
 function appendButtons(){
