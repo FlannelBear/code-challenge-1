@@ -8,8 +8,8 @@
 
 <!-- In a CSS file, any <div> created using the "Generate" button should start with red as it's background-color. -->
 
-Clicking a "Swap" <button> should change its parent background-color from red to yellow.
+<!-- Clicking a "Swap" <button> should change its parent background-color from red to yellow. -->
 
-Clicking the "Swap" <button> on a yellow div should turn the background-color to red.
+<!-- Clicking the "Swap" <button> on a yellow div should turn the background-color to red. -->
 
-Clicking a "Delete" <button> should remove its parent <div>.
+<!-- Clicking a "Delete" <button> should remove its parent <div>. -->

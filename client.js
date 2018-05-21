@@ -7,7 +7,8 @@ let totalClicks = 0;
 
 function setUp(){
     $('#generateBtn').on('click', generateBtnHandler);
-    $('#swapBtn').on('click', swapBtnHandler);
+    $(document).on('click', '#swapBtn', swapBtnHandler);
+    $(document).on('click', '#deleteBtn', deleteBtnHandler);
 }
 
 function generateBtnHandler(){
@@ -31,13 +32,17 @@ function appendButtons(){
 
 function swapBtnHandler(){
     console.log('swap');
-    // let parentDiv = $(this).parentNode;
-    // if(parentDiv.hasClass('red')){
-    //     parentDiv.removeClass('red');
-    //     parentDiv.addClass('yellow');
-    // } else {
-    //     parentDiv.removeClass('yellow');
-    //     parentDiv.addClass('red');
-    // } // end class toggle
+    let parentDiv = $(this).parent();
+    if(parentDiv.hasClass('red')){
+        parentDiv.removeClass('red');
+        parentDiv.addClass('yellow');
+    } else {
+        parentDiv.removeClass('yellow');
+        parentDiv.addClass('red');
+    } // end class toggle
 }
 
+function deleteBtnHandler(){
+    let parentDiv = $(this).parent();
+    parentDiv.remove();
+}
